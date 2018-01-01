@@ -2,14 +2,16 @@
 
 1. install pip
 
-´´´opkg update
-opkg install python-pip´´´
+```bash
+opkg update
+opkg install python-pip
+```
 
 2. install Coinmarketcap python wrapper using pip
 
-´´´
+```bash
 pip install coinmarketcap
-´´´
+```
 
 3. setup Onion:
 
