@@ -2,10 +2,8 @@
 
 1. install pip
 
-´´´
-opkg update
-opkg install python-pip
-´´´
+´´´opkg update
+opkg install python-pip´´´
 
 2. install Coinmarketcap python wrapper using pip
 
