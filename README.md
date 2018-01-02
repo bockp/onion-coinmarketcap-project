@@ -35,7 +35,7 @@ opkg install python-light pyOledExp
 5. execute script on the Onion Omega2+:
 
 ```bash
-python3 coinmarketcapMain.py
+python coinmarketcapMain.py
 ```
 
 # additional project ideas:
