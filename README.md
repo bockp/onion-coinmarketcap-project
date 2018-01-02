@@ -1,27 +1,6 @@
 # preliminary steps to make the project functional
 
-1. install pip
-
-```bash
-opkg update
-opkg install python-pip
-```
-
-2. install Coinmarketcap python wrapper using pip:
-
-```bash
-pip install coinmarketcap
-```
-
-3. install python-light and pyOledExp libraries to use the OLED Expansion:
-
-```bash
-opkg update
-opkg install python-light pyOledExp
-```
-
-
-4. setup Onion:
+1. setup Onion:
 
 * install Onion2 in an onion Docker that accepts an Expansion.
 * [install OLED display](https://docs.onion.io/omega2-docs/oled-expansion.html).
@@ -29,9 +8,33 @@ opkg install python-light pyOledExp
 (see [Onion first time setup instructions](https://docs.onion.io/omega2-docs/first-time-setup-command-line.html) for instructions.)
 
 
-5. execute script:
+2. install pip on the onion Omega2+
 
+```bash
+opkg update
+opkg install python-pip
 ```
+
+2. install Coinmarketcap python wrapper using pip on the onion Omega2+:
+
+```bash
+pip install coinmarketcap
+```
+
+3. install python-light and pyOledExp libraries to use the OLED Expansion on the onion Omega2+:
+
+```bash
+opkg update
+opkg install python-light pyOledExp
+```
+
+
+
+
+
+5. execute script on the Onion Omega2+:
+
+```bash
 python3 coinmarketcapMain.py
 ```
 
