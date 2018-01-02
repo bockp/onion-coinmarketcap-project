@@ -27,12 +27,14 @@ ethUSD = eth_ticker[0]["price_usd"]
 steemUSD = steem_ticker[0]["price_usd"]
 smartcashUSD = smartcash_ticker[0]["price_usd"]
 
-ret 	= oledExp.write("Ethereum price: " + ethUSD + "$\n" +
-                        "Steem price: " +  steemUSD + "$\n" +
-                        "SmartCash price: " + smartcashUSD + "$\n") # need to write these 3 one by one on separate lines ?
-                        # also, need to reduce num of significant digits...
-print "write return: ", ret
-if (ret != 0):
+ret1 	= oledExp.write("ETH: " + ethUSD + "$")
+oledExp.setCursor(1, 0)
+ret2	= oledExp.write("STEEM: " + steemUSD + "$")
+oledExp.setCursor(2, 0)
+ret3    = oledExp.write("SMART: " + smartcashUSD + "$")
+
+print "write return: ", ret1,ret2,ret3
+if (ret1 != 0 or ret2 != 0 or ret3 !=0):
 	exit()
 time.sleep(10)
 
